@@ -1,0 +1,195 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Mon Nov 12 08:28:38 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "admin",
+            "base": "",
+            "fields": []
+        },
+        
+        {
+            "name": "status",
+            "base": "",
+            "fields": []
+        },
+        
+             {
+      "name": "paramstruct",
+      "base": "",
+      "fields": [
+      {
+          "name": "param",
+          "type": "string"
+        }  
+      ]                      
+    },
+    
+       
+    
+      {
+      "name": "global",
+      "base": "",
+      "fields": [
+      {
+          "name": "id",
+          "type": "uint64"
+        }, 
+      {
+          "name": "accounts",
+          "type": "uint64"
+        },
+        
+      {
+          "name": "funds_open",
+          "type": "uint64"
+        },
+      {
+          "name": "funds_closed",
+          "type": "uint64"
+        }
+        
+        
+        ]
+         },
+        
+        
+        
+        
+      
+        
+       
+      {
+      "name": "depstruct",
+      "base": "",
+      "fields": [
+         {
+          "name": "id",
+          "type": "uint64"
+        },
+      {
+          "name": "holder",
+          "type": "name"
+        },
+      {
+          "name": "holderid",
+          "type": "uint64"
+        },
+        {
+          "name": "depositidhr",
+          "type": "name"
+        },
+        {
+          "name": "depositid",
+          "type": "uint64"
+        } ,   
+        
+        {
+          "name": "amount",
+          "type": "uint64"
+        },
+        {
+          "name": "fee",
+          "type": "uint64"
+        },
+        {
+          "name": "withdrawn",
+          "type": "bool"
+        }, 
+
+        {
+          "name": "timewithdraw",
+          "type": "uint64"
+        } 
+        
+         
+        
+    
+         
+                    
+        ]
+      } 
+      
+      
+      
+    
+   
+ 
+     
+       
+       
+
+        
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "admin",
+            "type": "paramstruct",
+            "ricardian_contract": ""
+        } ,
+       {
+            "name": "withdraw",
+            "type": "paramstruct",
+            "ricardian_contract": ""
+        } ,
+        
+        {
+            "name": "status",
+            "type": "status",
+            "ricardian_contract": ""
+        } 
+    
+    ],
+    "tables": [
+    
+    
+     {
+      "name": "global",
+      "index_type": "i64",
+      "key_names": [
+        "id"
+      ],
+      "key_types": [
+        "uint64"
+      ],
+      "type": "global"
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+      {
+      "name": "depstruct",
+      "index_type": "i64",
+      "key_names": [
+        "id",
+        "holderid",
+        "depositid" 
+       
+      ],
+      "key_types": [
+        "uint64", 
+        "uint64",
+        "uint64" 
+      ],
+      "type": "depstruct"
+    }   
+       
+    
+    
+      
+      
+      
+    
+     
+       
+    
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
